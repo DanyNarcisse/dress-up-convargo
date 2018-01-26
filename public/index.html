@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+      
+    <meta charset="utf-8">
+    <meta name="description" content="Convargo Dress Up">
+    <meta name="author" content="Dany Narcisse">
+
     <title>CSS/HTML Workshop with Convargo</title>
+      
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="/dress-up-convargo/public/style.css">
+      
+    <!-- My custom styles -->
+    <link href="/dress-up-convargo/public/mystyle.css" rel="stylesheet">
+
   </head>
-  <body>
+  
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Convargo</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <body>
     <div id="trucker">
       <input class="name" type="text" placeholder="Trucker name"/>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
@@ -15,7 +51,8 @@
       <input class="volume" type="number" placeholder="Volume in m3"/>
       <input class="option" type="checkbox" placeholder="Deductible option"/>
     </div>
-    <button id="compute">Compute</button>
+    <button id="compute" class="btn">Compute</button>
+
     <div id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
